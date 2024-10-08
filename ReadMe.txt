@@ -1,22 +1,20 @@
+Controls
 LMB - Shoot
 W - Up
 S - Down
 A - Left
 D - Right
 
+I made my scene similar to that within the image shown, i did leave out a few items for the sake of time
+i added enemy takes, didn't make a spawner, i instead placed them acround the map, i had a player that could move rotate and fire
+i also had a base where the player could die from or if the player took 20 hits it would be destroyed but i didn't add a death screen 
+because of the time limit.
 
 
-The singleton works by adding iit to a gameobject 
-then selecting the gameobject i needed within my game. In this case 
-it was my base heatlh
 
+The singleton pattern within my game is used to make sure there is always a base heatlh. The square at the
+Top of my scene is where my base is to i attached a singleton onto that to ensure a component script of "base health"
+would always spawn
 
-My observer pattern worked by observing the player in the scene, grabbing
-the players health and notifying its subscribers of its changes.
-
-The singleton is similar to the one in the lecture because it is for a manager,
-In the lecture the singleton is for a UI manager and in my game it is for the base health or a 
-single key componenet
-
-the observer is similar to the ones we've made in class, it reads from a player and tells the other
-subsribes to update themselves, in my case the UI
+Next i had my observer pattern, this pattern look at the player, it then notified its subscribers whenever the players health changes
+The UI Text at the top left is updated anytime the players gets hit but my UI does not talk to the player instead it goes through my UI Observer script.
