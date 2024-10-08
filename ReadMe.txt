@@ -17,4 +17,8 @@ Top of my scene is where my base is to i attached a singleton onto that to ensur
 would always spawn
 
 Next i had my observer pattern, this pattern look at the player, it then notified its subscribers whenever the players health changes
-The UI Text at the top left is updated anytime the players gets hit but my UI does not talk to the player instead it goes through my UI Observer script.
+The UI Text at the top left is updated anytime the players gets hit but my UI does not 
+talk to the player instead it goes through my UI Observer script.
+
+I also accidentantly submitted my theoricical exam before i finished by pressing the submit
+instead of next question so if my mark is really low for that part, that is the reason unforunaly.
